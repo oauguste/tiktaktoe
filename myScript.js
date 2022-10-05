@@ -84,7 +84,8 @@ function oneRound(x,y){
             
     }
 }
-for (let i = 0; i< 50; i++){
+function game(x){
+    for (let i = 0; i< 50; i++){
     getComputerChoice(value2);
     computerSelection = getComputerChoice(value2);
     console.log(oneRound(playerSelection, computerSelection));
@@ -101,5 +102,6 @@ for (let i = 0; i< 50; i++){
         break;
     }
     }
-    
+}
+game();
     
