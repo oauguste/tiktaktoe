@@ -1,0 +1,36 @@
+.score-board{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap:wrap;
+    flex: 1;
+    border: 2px double black;
+    width: auto;
+    height: 200px
+}
+
+.player-score{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    flex: 1;
+    border: 2px double black;
+    width: auto;
+}
+
+.computer-score{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    flex: 1;
+    border: 2px double black;
+    width: auto;
+}
+
+.winner{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex: 1;
+    border: 2px double black;
+    width: auto;
+}
