@@ -1,4 +1,3 @@
-console.log("Hello World");
 
 //Begin with a function called getComputerChoice that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
 //Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
@@ -37,7 +36,7 @@ function getComputerChoice(x) {
   if (value2 == 1) {
     return "rock";
   } else if (value2 == 2) {
-    return "scissors";
+    return "scissor";
   } else {
     return "paper";
   }
@@ -68,7 +67,96 @@ function oneRound(x, y) {
     return computerWin;
   }
 }
-function game(x) {
+function rock1(){
+  value2 = Math.round(Math.random() * (3 - 1) + 1);
+  computerSelection = getComputerChoice(value2);
+  if (computerSelection == 'rock') {
+    console.log(tieGame = `Its a tie: rock ties with ${computerSelection}`);
+    return tieGame;
+  } else if (computerSelection == "scissors") {
+    console.log(playerWin = `You win: rock beats ${computerSelection}`);
+    playerScore++;
+    return playerWin;
+  } else if (computerSelection == "paper") {
+    console.log(computerWin = `You lose: ${computerSelection} beats rock`);
+    computerScore++;
+    return computerWin;}
+    else{return};
+  };
+
+  function paper1(){
+    value2 = Math.round(Math.random() * (3 - 1) + 1);
+    computerSelection = getComputerChoice(value2);
+    if (computerSelection == 'paper') {
+      console.log(tieGame = `Its a tie: paper ties with ${computerSelection}`);
+      return tieGame;
+    } else if (computerSelection == "rock") {
+      console.log(playerWin = `You win: paper beats ${computerSelection}`);
+      playerScore++;
+      return playerWin;
+    } else if (computerSelection == "scissor") {
+      console.log(computerWin = `You lose: ${computerSelection} beats paper`);
+      computerScore++;
+      return computerWin;}
+      else{return};
+    };
+
+    function scissor1(){
+      value2 = Math.round(Math.random() * (3 - 1) + 1);
+      computerSelection = getComputerChoice(value2);
+      if (computerSelection == 'scissor') {
+        console.log(tieGame = `Its a tie: scissor ties with ${computerSelection}`);
+        return tieGame;
+      } else if (computerSelection == "paper") {
+        console.log(playerWin = `You win: scissor beats ${computerSelection}`);
+        playerScore++;
+        return playerWin;
+      } else if (computerSelection == "paper") {
+        console.log(computerWin = `You scissor: ${computerSelection} beats Rock`);
+        computerScore++;
+        return computerWin;}
+        else{return};
+      };
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissor = document.querySelector('#scissor');
+
+rock.onclick = rock1;
+paper.onclick = paper1;
+scissor.onclick = scissor1;
+
+
+/*paper.addEventListener('click', () => {playerSelection = 'paper'
+console.log(playerSelection);
+});
+
+scissor.addEventListener('click', () => {playerSelection = 'scissor'
+console.log(playerSelection);
+});
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function game(x) {
   for (let i = 0; i < 50; i++) {
     getComputerChoice(value2);
     computerSelection = getComputerChoice(value2);
@@ -86,3 +174,4 @@ function game(x) {
   }
 }
 game();
+*/
