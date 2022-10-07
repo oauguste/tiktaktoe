@@ -73,7 +73,7 @@ function rock1(){
   if (computerSelection == 'rock') {
     console.log(tieGame = `Its a tie: rock ties with ${computerSelection}`);
     return tieGame;
-  } else if (computerSelection == "scissors") {
+  } else if (computerSelection == "scissor") {
     console.log(playerWin = `You win: rock beats ${computerSelection}`);
     playerScore++;
     return playerWin;
@@ -81,8 +81,8 @@ function rock1(){
     console.log(computerWin = `You lose: ${computerSelection} beats rock`);
     computerScore++;
     return computerWin;}
-    else{return};
-  };
+    
+  }
 
   function paper1(){
     value2 = Math.round(Math.random() * (3 - 1) + 1);
@@ -99,7 +99,7 @@ function rock1(){
       computerScore++;
       return computerWin;}
       else{return};
-    };
+    }
 
     function scissor1(){
       value2 = Math.round(Math.random() * (3 - 1) + 1);
@@ -116,7 +116,7 @@ function rock1(){
         computerScore++;
         return computerWin;}
         else{return};
-      };
+      }
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissor = document.querySelector('#scissor');
